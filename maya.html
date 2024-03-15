@@ -25,9 +25,15 @@
         </div>
         <div class="header-grop">
           <ul class="group-all list">
-            <li class="group-allli">Про нас</li>
-            <li class="group-allli">Каталог</li>
-            <li class="group-allli">Доставка</li>
+            <li>
+              <a class="group-allli" href="onas.html">Про нас</a>
+            </li>
+            <li>
+              <a class="group-allli" href="katalog.html">Каталог</a>
+            </li>
+            <li>
+              <a class="group-allli" href="dostavka.html">Доставка</a>
+            </li>
           </ul>
         </div>
         <div class="header-tell">
@@ -104,9 +110,6 @@
           </p>
         </div>
       </div>
-      <!-- <div class="foto-big-header">
-        <img class="big-foto" src="./img/header/logo-big.png" alt="foto">
-      </div> -->
       <div class="vniz-header">
         <h2 class="glavn-vniz1">MAYA BASE</h2>
       </div>
@@ -196,28 +199,6 @@
       <button class="btn-cupon" onclick="openPhoneNumber()">ОТРИМАТИ КУПОН</button>
     </div>
   </section>
-  <!-- <section class="onzivi container">
-    <h2 class="onzivi-text">ВІДГУКИ НАШИХ ЩАСЛИВИХ ПОКУПЦІВ</h2>
-    <div class="reviews container">
-      <div class="arrow arrow-left" onclick="scrollReviews(-1)">←</div>
-      <div class="reviews-list">
-        <div class="review">
-          <img class="reviw-foto" src="./img/onzivi/foto1.png" alt="Product 1">
-          <p class="prgr-otzivi"></p>
-        </div>
-        <div class="review">
-          <img class="reviw-foto" src="./img/onzivi/foto2.png" alt="Product 1">
-          <p class="prgr-otzivi"></p>
-        </div>
-        <div class="review">
-          <img class="reviw-foto" src="./img/onzivi/foto3.png" alt="Product 1">
-          <p class="prgr-otzivi"></p>
-        </div>
-
-      </div>
-      <div class="arrow arrow-right" onclick="scrollReviews(1)">→</div>
-    </div>
-  </section> -->
   <section class="info container">
     <h2 class="info-text">НАС ЧАСТО ЗАПИТУЮТЬ</h2>
 
@@ -322,10 +303,42 @@
       <p class="tree-prg">Задайте нам його в Telegram</p>
     </div>
     <div class="bnt-nbt-tree">
-      <button class="btn-cupon-tree" onclick="openTelegram()">ЗАПИТАТЬ В TELEGRAM</button>
+      <button class="btn-cupon-tree" onclick="openTelegram()">ЗАПИТАТИ В TELEGRAM</button>
     </div>
-
   </section>
+  <footer class="footer">
+    <h2 class="footer-text">СЛІДКУЙТЕ ЗА НАШИМИ НОВИНКАМИ</h2>
+    <div class="footer-box">
+      <ul class="box-catal">
+        <div class="text-box">
+          <a class="gfdhvb" href="index.html">Каталог</a>
+        </div>
+        <div class="text-box">
+          <a class="gfdhvb" href="index.html">Доставка</a>
+        </div>
+        <div class="text-box">
+          <a class="gfdhvb" href="index.html">Оплата</a>
+        </div>
+    </div>
+    </ul>
+    </div>
+    <div class="social-icons-fotter">
+      <a href="https://www.instagram.com/p/CjHqaGGD-nu/?img_index=1" target="_blank"><img src="./img/footer/foto3.png"
+          alt="Instagram"></a>
+      <a href="https://youtu.be/6e2m7a_FwKw?si=mIgJYSsWWzwg3mri" target="_blank"><img src="./img/footer/foto1.png"
+          alt="Instagram"></a>
+      <a href="https://t.me/karinka22111876" target="_blank"><img src="./img/footer/foto2.png" alt="Instagram"></a>
+    </div>
+    <div class="pargr-footer">
+      <p class="paragr-text-footer">Залишіть адресу своєї електронної пошти</p>
+    </div>
+    <form class="forma" action="subscribe.php" method="post">
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="romanur@gmail.com" required>
+
+      <button class="footer-btn" type="submit">ОТРИМУВАТИ НОВИНИ НА EMAIL</button>
+    </form>
+  </footer>
 
   <script src="./js/scrollreidt.js"></script>
   <script src="./js/number.js"></script>
