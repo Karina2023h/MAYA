@@ -858,3 +858,301 @@ input {
   color: rgba(77, 77, 77, 1);
   margin-top: 35px;
 }
+
+/*  */
+
+.section-katalog {
+  padding-top: 50px;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+.glavna-text {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.alles-tovar {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.olid {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.all-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0px;
+}
+
+.text-zina {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(72, 72, 72, 0.8);
+  margin-top: 60px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 230px;
+  height: 2px;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(196, 196, 196, 1);
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: rgba(196, 196, 196, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.poloska {
+  width: 20px;
+  height: 2px;
+  background: rgba(196, 196, 196, 1);
+  margin: 25px 1px;
+}
+
+.btn-befor {
+  background: rgba(228, 238, 242, 1);
+  width: 90px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-after {
+  background: rgba(228, 238, 242, 1);
+  width: 90px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.posmir-text {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.divar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.catara {
+  display: flex;
+}
+
+
+
+.size-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.size-icon {
+  padding: 5px;
+  margin-bottom: 10px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+.size-icon.selected::after {
+  content: '\2713';
+  /* Галочка */
+  font-size: 24px;
+  color: green;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  /* width: calc(33.33% - 20px); */
+  width: 190px;
+  height: 305px;
+  margin: 10px;
+  padding: 40px 5px;
+}
+
+.product-foto {
+  width: 190px;
+  height: 270px;
+}
+
+.all-infor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.psra {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(77, 77, 77, 1);
+  margin-top: 1px;
+}
+
+.suma {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(77, 77, 77, 1);
+  margin-top: -15px;
+}
+
+.product-btn {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(191, 118, 145, 1);
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  margin-top: -10px;
+}
+
+
+.allen {
+  padding-top: 40px;
+}
+
+
+.allen-content {
+  display: flex;
+}
+
+
+.allen-foto-nav {
+  width: 270px;
+  height: 370px;
+}
+
+.allen-foto {
+  margin-left: 160px;
+}
+
+.text-allen {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(77, 77, 77, 1);
+  margin-left: -65px;
+}
+
+.parag-allen {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.sklad {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.sostav {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 5px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(77, 77, 77, 1);
+}
+
+.informat {
+  padding: 1px 90px;
+  margin-top: -25px;
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="/iconks.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+</head>
+
+<body>
+  <header class="header active ">
+    <div class="content-item active">
+      <div class="header-text">
+        <p class="header-prg-str">Познайомтеся з акціями цього місяця від MAYA</p>
+      </div>
+      <div class="heade-all">
+        <div class="header-logo">
+          <a href="maya.html">
+            <img class="size-foto" src="./img/foto1/foto1.png" alt="logofoto">
+          </a>
+        </div>
+        <div class="header-grop">
+          <ul class="group-all list">
+            <li>
+              <a class="group-allli-str" href="onas.html">Про нас</a>
+            </li>
+            <li><a class="group-allli-str" href="katalog.html">Каталог</a></li>
+            <li><a class="group-allli-str" href="dostavka.html">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="header-tell">
+          <img class="tell-foto-str" src="./img/foto1/fototell.png" alt="logofoto">
+          <p><a class="parg-header-str" href="tel:+380661340040">+380 (66) 1340 040 </a>
+          </p>
+        </div>
+      </div>
+  </header>
+  <section class="section-katalog container">
+    <div class="catara">
+      <div class="catalog">
+        <div class="sidebar">
+          <h2 class="glavna-text">Каталог</h2>
+          <ul class="all-form">
+            <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('БАНДАЖІ')">БАНДАЖІ</a></li>
+            <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('БЮСТГАЛЬТЕРИ')">БЮСТГАЛЬТЕРИ</a>
+            </li>
+            <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('ТРУСИКИ')">ТРУСИКИ</a></li>
+            <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('ІНШЕ')">ІНШЕ</a></li>
+          </ul>
+          <h3 class="text-zina">Ціна</h3>
+          <input type="range" id="priceRange" min="0" max="10000" value="400">
+          <div class="price-buttons">
+            <button class="btn-befor" id="beforeBtn">Від</button>
+            <div class="poloska"></div>
+            <button class="btn-after" id="afterBtn">До</button>
+          </div>
+          <h3 class="posmir-text">Розмір</h3>
+          <div class="size-icons">
+            <span class="size-icon" data-size="s">S</span>
+            <span class="size-icon" data-size="m">M</span>
+            <span class="size-icon" data-size="l">L</span>
+            <span class="size-icon" data-size="xl">XL</span>
+            <span class="size-icon" data-size="xxl">XXL</span>
+            <span class="size-icon" data-size="xxxl">XXXL</span>
+          </div>
+        </div>
+      </div>
+      <div class="products" id="products">
+        <!-- Приклади товарів -->
+        <div data-category="БАНДАЖІ" class="product" name="product">
+          <img class="product-foto" src="./img/katalog/banda.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/katalog/banda2jpg.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top8.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Топ для вагітних</p>
+            <p class="suma">300 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/katalog/banda5.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1200 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/katalog/bcdhgh.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">400 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/katalog/bust29.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top9.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Топ для вагітних</p>
+            <p class="suma">300 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/katalog/bust5.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div class="product">
+          <img data-category="ІНШЕ" class="product-foto" src="./img/katalog/foto2.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma"> 800 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/katalog/foto3.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">780 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/katalog/foto4.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">300 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/katalog/inhi.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">800 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/katalog/tru2.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">300 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/katalog/tru3.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">300 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/katalog/tru4.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">360 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/katalog/trus.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">360 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr0_.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">200 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr1.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr2.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/tr/tr3.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">700 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr4.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr5.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr6.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ТРУСИКИ" class="product">
+          <img class="product-foto" src="./img/tr/tr7.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Труси</p>
+            <p class="suma">500 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/tr/tr8.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">900 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <!--bust  -->
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust1.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust2.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Топ для вагітних</p>
+            <p class="suma">900 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top1.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Топ для вагітних</p>
+            <p class="suma">1050 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top2.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Топ для вагітних</p>
+            <p class="suma">1050 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top3.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">1050 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust3.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust4.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust5.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust6.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top4.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">900 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+          <img class="product-foto" src="./img/bystgal/bust7.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бюстргалтер</p>
+            <p class="suma">550 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top5.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">900 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <!-- bandag -->
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag1.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top6.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">900 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag2.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag3.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag4.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="ІНШЕ" class="product">
+          <img class="product-foto" src="./img/nabir/top7.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Набір білизни</p>
+            <p class="suma">900 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag5.jpg" alt="logofoto">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn">Детальніше</button>
+          </div>
+        </div>
+        <div data-category="БАНДАЖІ" class="product">
+          <img class="product-foto" src="./img/bandag/bandag6.jpg" alt="Бандаж">
+          <div class="all-infor">
+            <p class="psra">Бандаж</p>
+            <p class="suma">1000 UAH</p>
+            <button class="product-btn" onclick="window.location.href = 'product47.html';">Детальніше</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/formprod.js"></script>
+  <script src="./js/value.js"></script>
+  <script src="./js/katalog.js"></script>
+  <script src="./js/gal.js"></script>
+  <script src="./js/modal.js"></script>
+
+</body>
+
+</html>
