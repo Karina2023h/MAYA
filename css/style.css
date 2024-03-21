@@ -370,7 +370,7 @@ strong {
 
 .cuponir {
   position: relative;
-  background-image: url('/img/sect-th/cupon.png');
+  background-image: url('../img/sect-th/cupon.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: auto;
