@@ -38,14 +38,24 @@
           </p>
         </div>
       </div>
+    </div>
   </header>
   <section class="allen container">
     <div class="allen-content">
-      <div class="allen-foto">
-        <img class="allen-foto-nav" src="./img/bandag/bandag6.jpg" alt="Бандаж">
+      <div class="product-images">
+        <div class="allen-foto">
+          <img class="allen-foto-nav" src="./img/bandag/bandag6.jpg" alt="Бандаж">
+        </div>
+        <div class="thumbnails">
+          <img src="./img/bandag/bandag6.jpg" alt="Thumbnail 4">
+          <img src="./images/prod47/foto1.jpg" alt="Thumbnail 1">
+          <img src="./images/prod47/foto2.jpg" alt="Thumbnail 2">
+          <img src="./images/prod47/foto3.jpg" alt="Thumbnail 3">
+
+        </div>
       </div>
       <div class="informat">
-        <h2 class="text-allen">Бандаж для вагітних 00128 сірий меланж/білий</h2>
+        <h2 class="text-allen" id="order-number">Бандаж для вагітних 00128 сірий меланж/білий</h2>
         <p class="parag-allen">Дородовий бандаж-животик. Час носіння – не більше 10 годин на добу. Бандаж-животик
           дозволяє легко міняти
           білизну. За
@@ -54,9 +64,43 @@
           живота.</p>
         <p class="sklad">Склад</p>
         <p class="sostav">94% Бавовна 4% Поліестер 2% Еластан</p>
+        <div class="sizes">
+          <h3 class="rosmir">Розмір</h3>
+          <button class="size" value="S">S</button>
+          <button class="size" value="M">M</button>
+          <button class="size" value="L">L</button>
+          <button class="size" value="XL">XL</button>
+          <button class="size" value="XXL">XXL</button>
+          <button class="size" value="XXXL">XXXL</button>
+        </div>
+        <button class="order-btn">ЗАМОВИТИ</button>
       </div>
     </div>
+
+    </div>
+
   </section>
 </body>
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="araol">Оформлення замовлення</h2>
+    <p class="gcshv"><span id="selected-size"></span></p>
+    <p class="vscs" id="modal-order-number"> Номер замовлення: </p>
+    <div class="bvdg">
+      <button class="confirm-order-btn">Підтвердити замовлення</button>
+    </div>
+  </div>
+</div>
+
+<div id="success-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="vasycv">Дякуємо за ваше замовлення!</h2>
+    <p class="bsdv">Менеджер зв'яжеться з вами найближчим часом.</p>
+  </div>
+</div>
+<script src="./js/foto.js"></script>
+<script src="./js/modal.js"></script>
 
 </html>
