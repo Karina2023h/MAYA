@@ -44,7 +44,7 @@
     <div class="catara">
       <div class="catalog">
         <div class="sidebar">
-          <h2 class="glavna-text">Каталог</h2>
+          <a class="glavna-text" href="katalog.html">Каталог</a>
           <ul class="all-form">
             <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('БАНДАЖІ')">БАНДАЖІ</a></li>
             <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('БЮСТГАЛЬТЕРИ')">БЮСТГАЛЬТЕРИ</a>
@@ -52,22 +52,7 @@
             <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('ТРУСИКИ')">ТРУСИКИ</a></li>
             <li class="alles-tovar"><a class="olid" href="#" onclick="filterProducts('ІНШЕ')">ІНШЕ</a></li>
           </ul>
-          <h3 class="text-zina">Ціна</h3>
-          <input type="range" id="priceRange" min="0" max="10000" value="400">
-          <div class="price-buttons">
-            <button class="btn-befor" id="beforeBtn">Від</button>
-            <div class="poloska"></div>
-            <button class="btn-after" id="afterBtn">До</button>
-          </div>
-          <h3 class="posmir-text">Розмір</h3>
-          <div class="size-icons">
-            <span class="size-icon" data-size="s">S</span>
-            <span class="size-icon" data-size="m">M</span>
-            <span class="size-icon" data-size="l">L</span>
-            <span class="size-icon" data-size="xl">XL</span>
-            <span class="size-icon" data-size="xxl">XXL</span>
-            <span class="size-icon" data-size="xxxl">XXXL</span>
-          </div>
+
         </div>
       </div>
       <div class="products" id="products">
@@ -77,374 +62,374 @@
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr1.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/katalog/banda2jpg.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr2.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="300">
           <img class="product-foto" src="./img/nabir/top8.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Топ для вагітних</p>
             <p class="suma">300 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr3.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1200">
           <img class="product-foto" src="./img/katalog/banda5.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1200 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr4.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="400">
           <img class="product-foto" src="./img/katalog/bcdhgh.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">400 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr5.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="500">
           <img class="product-foto" src="./img/katalog/bust29.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr6.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="300">
           <img class="product-foto" src="./img/nabir/top9.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Топ для вагітних</p>
             <p class="suma">300 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr7.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/katalog/bust5.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr8.html';">Детальніше</button>
           </div>
         </div>
-        <div class="product">
-          <img data-category="ІНШЕ" class="product-foto" src="./img/katalog/foto2.jpg" alt="logofoto">
+        <div data-category="ІНШЕ" class="product" data-price="800">
+          <img class="product-foto" src="./img/katalog/foto2.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma"> 800 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr9.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="780">
           <img class="product-foto" src="./img/katalog/foto3.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">780 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr10.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="300">
           <img class="product-foto" src="./img/katalog/foto4.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">300 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr11.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="800">
           <img class="product-foto" src="./img/katalog/inhi.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">800 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr12.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="300">
           <img class="product-foto" src="./img/katalog/tru2.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">300 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr13.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="300">
           <img class="product-foto" src="./img/katalog/tru3.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">300 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr14.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="350">
           <img class="product-foto" src="./img/katalog/tru4.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
-            <p class="suma">360 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <p class="suma">350 UAH</p>
+            <button class="product-btn" onclick="window.location.href = 'pr15.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="350">
           <img class="product-foto" src="./img/katalog/trus.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
-            <p class="suma">360 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <p class="suma">350 UAH</p>
+            <button class="product-btn" onclick="window.location.href = 'pr16.html';">Детальніше</button>
           </div>
         </div>
 
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="200">
           <img class="product-foto" src="./img/tr/tr0_.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">200 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr17.html';">Детальніше</button>
           </div>
         </div>
 
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="500">
           <img class="product-foto" src="./img/tr/tr1.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr18.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="500">
           <img class="product-foto" src="./img/tr/tr2.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr19.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="700">
           <img class="product-foto" src="./img/tr/tr3.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">700 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr20.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="500">
           <img class="product-foto" src="./img/tr/tr4.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr21.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="500">
           <img class="product-foto" src="./img/tr/tr5.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr22.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="500">
           <img class="product-foto" src="./img/tr/tr6.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr23.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ТРУСИКИ" class="product">
+        <div data-category="ТРУСИКИ" class="product" data-price="500">
           <img class="product-foto" src="./img/tr/tr7.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Труси</p>
             <p class="suma">500 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr24.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="900">
           <img class="product-foto" src="./img/tr/tr8.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">900 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr25.html';">Детальніше</button>
           </div>
         </div>
         <!--bust  -->
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust1.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr26.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust2.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr27.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="900">
           <img class="product-foto" src="./img/nabir/top.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Топ для вагітних</p>
             <p class="suma">900 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr28.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="1050">
           <img class="product-foto" src="./img/nabir/top1.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Топ для вагітних</p>
             <p class="suma">1050 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr29.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="1050">
           <img class="product-foto" src="./img/nabir/top2.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Топ для вагітних</p>
             <p class="suma">1050 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr30.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="1050">
           <img class="product-foto" src="./img/nabir/top3.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">1050 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr31.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust3.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr32.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust4.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr33.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust5.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr34.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust6.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr36.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="900">
           <img class="product-foto" src="./img/nabir/top4.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">900 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr35.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БЮСТГАЛЬТЕРИ" class="product">
+        <div data-category="БЮСТГАЛЬТЕРИ" class="product" data-price="550">
           <img class="product-foto" src="./img/bystgal/bust7.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бюстргалтер</p>
             <p class="suma">550 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr37.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="900">
           <img class="product-foto" src="./img/nabir/top5.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">900 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr38.html';">Детальніше</button>
           </div>
         </div>
         <!-- bandag -->
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag.jpg" alt="logofoto">
           <div class="all-infor">
-            <p class="psra">Бандаж</p>
+            <p class="psra">Пояс-корсет</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr39.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag1.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr40.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="900">
           <img class="product-foto" src="./img/nabir/top6.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">900 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr41.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag2.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr42.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag3.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr43.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag4.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr44.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="ІНШЕ" class="product">
+        <div data-category="ІНШЕ" class="product" data-price="900">
           <img class="product-foto" src="./img/nabir/top7.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Набір білизни</p>
             <p class="suma">900 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr45.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag5.jpg" alt="logofoto">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
             <p class="suma">1000 UAH</p>
-            <button class="product-btn">Детальніше</button>
+            <button class="product-btn" onclick="window.location.href = 'pr46.html';">Детальніше</button>
           </div>
         </div>
-        <div data-category="БАНДАЖІ" class="product">
+        <div data-category="БАНДАЖІ" class="product" data-price="1000">
           <img class="product-foto" src="./img/bandag/bandag6.jpg" alt="Бандаж">
           <div class="all-infor">
             <p class="psra">Бандаж</p>
