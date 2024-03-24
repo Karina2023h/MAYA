@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAYA</title>
   <link rel="stylesheet" href="./css/style.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" href="./iconks.png" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -332,20 +333,22 @@
     <div class="pargr-footer">
       <p class="paragr-text-footer">Залишіть адресу своєї електронної пошти</p>
     </div>
-    <form class="forma" action="subscribe.php" method="post">
+    <form class="forma" id="order-form" onsubmit="sendEmailTelegrum(event)">
       <label for="email"></label>
       <input type="email" id="email" name="email" placeholder="romanur@gmail.com" required>
-
       <button class="footer-btn" type="submit">ОТРИМУВАТИ НОВИНИ НА EMAIL</button>
     </form>
-  </footer>
 
+  </footer>
   <script src="./js/scrollreidt.js"></script>
   <script src="./js/number.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/plus.js"></script>
   <script src="./js/telegr.js"></script>
   <script src="./js/trus.js"></script>
+  <script src="./js/server.js"></script>
+
+  <script src="./js/value.js"></script>
 </body>
 
 </html>
