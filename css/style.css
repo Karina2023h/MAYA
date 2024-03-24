@@ -1347,3 +1347,26 @@ input[type="range"]::-moz-range-thumb {
   color: rgb(59, 59, 59);
   text-align: center;
 }
+
+
+.alert-success {
+  display: none;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(138, 221, 146);
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 7px;
+  color: #050505;
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 13px;
+
+}
+
+#success {
+  transition: opacity 1s ease, visibility 1s linear 2s;
+}

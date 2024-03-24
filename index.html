@@ -333,22 +333,62 @@
     <div class="pargr-footer">
       <p class="paragr-text-footer">Залишіть адресу своєї електронної пошти</p>
     </div>
-    <form class="forma" id="order-form" onsubmit="sendEmailTelegrum(event)">
+    <form class="forma" id="orderform">
       <label for="email"></label>
       <input type="email" id="email" name="email" placeholder="romanur@gmail.com" required>
-      <button class="footer-btn" type="submit">ОТРИМУВАТИ НОВИНИ НА EMAIL</button>
-    </form>
 
+
+      <button class="footer-btn" type="submit">ОТРИМУВАТИ НОВИНИ НА EMAIL</button>
+
+    </form>
+    <div id="success" class="alert alert-success" role="alert"></div>
   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <script>
+
+    const TOKEN = "7137681405:AAF351KCaa8dxo0TWB23M1aPk-0HT2bpMzo";
+    const CHAT_ID = "-1002144280183";
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+    const success = document.getElementById('success');
+
+    document.getElementById('orderform').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      let message = `<b>Заявка з сайта</b>\n`;
+      message += `<b>Почта!</b> ${this.email.value}`;
+
+      axios.post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: 'html',
+        text: message
+      })
+
+        .then((res) => {
+          this.email.value = "";
+          success.innerHTML = "Електронна адреса відправлена!";
+          success.style.display = "block";
+
+          setTimeout(function () {
+            success.style.opacity = 0; // Изменяем непрозрачность текста на 0
+          }, 2000); // Через 2 секунды после появления
+
+        })
+        .catch((err) => {
+          console.log('err');
+        })
+        .finally(() => {
+          console.log('Кінець');
+        })
+    })
+
+  </script>
   <script src="./js/scrollreidt.js"></script>
   <script src="./js/number.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/plus.js"></script>
   <script src="./js/telegr.js"></script>
-  <script src="./js/trus.js"></script>
-  <script src="./js/server.js"></script>
-
-  <script src="./js/value.js"></script>
 </body>
 
 </html>
