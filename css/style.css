@@ -1028,7 +1028,7 @@ strong {
 
 .secrt-tree {
   position: relative;
-  background-image: url('/img/sect-vop/fotoas1.png');
+  background-image: url('../img/sect-vop/fotoas1.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: auto;
@@ -1039,7 +1039,7 @@ strong {
 @media screen and (min-width: 1024px) {
   .secrt-tree {
     position: relative;
-    background-image: url('/img/sect-vop/fotoas1.png');
+    background-image: url('../img/sect-vop/fotoas1.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: auto;
