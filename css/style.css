@@ -1445,84 +1445,189 @@ input {
 
 .text-maya {
   font-family: Optima Cyr;
-  font-size: 41px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 20px;
   letter-spacing: 0.02em;
   text-align: center;
   color: rgba(72, 72, 72, 1);
-  margin-top: 60px;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-maya {
+    font-family: Optima Cyr;
+    font-size: 41px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(72, 72, 72, 1);
+    margin-top: 60px;
+  }
 }
 
 .foto-foto-one {
-  width: 350px;
-  height: 450px;
+  width: 150px;
+  height: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  .foto-foto-one {
+    width: 350px;
+    height: 450px;
+  }
 }
 
 .text-big {
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 29px;
+  line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(77, 77, 77, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .text-big {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+  }
 }
 
 .text-boa {
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(77, 77, 77, 1);
 }
 
+@media screen and (min-width: 1024px) {
+  .text-boa {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+  }
+}
+
+
 .form-sect {
-  display: flex;
-  padding-top: 50px;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .form-sect {
+    display: flex;
+    padding-top: 50px;
+  }
 }
 
 .text-text-sect {
-  padding: 10px 80px;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-text-sect {
+    padding: 10px 80px;
+  }
 }
 
 .foto-sect1 {
-  padding-left: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .foto-sect1 {
+    padding-left: 70px;
+  }
 }
 
 .datas {
-  padding-top: 70px;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .datas {
+    padding-top: 70px;
+  }
 }
 
 .datas-form {
   border: 2px solid rgba(241, 205, 209, 1);
-  width: 1000px;
-  height: 200px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .datas-form {
+    border: 2px solid rgba(241, 205, 209, 1);
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}
+
 .text-datas {
   font-family: 'Optima Cyr';
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
   color: rgba(77, 77, 77, 1);
-  margin-bottom: -20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-datas {
+    font-family: 'Optima Cyr';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(77, 77, 77, 1);
+    margin-bottom: -20px;
+  }
 }
 
 .text-datas1 {
   font-family: 'Optima Cyr';
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 5px;
   letter-spacing: 0em;
   text-align: center;
   color: rgba(77, 77, 77, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .text-datas1 {
+    font-family: 'Optima Cyr';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(77, 77, 77, 1);
+  }
 }
 
 .footer-forms {
@@ -1794,47 +1899,102 @@ input {
 /*  */
 
 .section-katalog {
-  padding-top: 50px;
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-bottom: 120px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-katalog {
+    padding-top: 50px;
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-bottom: 120px;
+  }
 }
 
 .glavna-text {
   font-family: 'Montserrat';
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 49px;
+  line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(77, 77, 77, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .glavna-text {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+  }
 }
 
 .alles-tovar {
   font-family: 'Montserrat';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(77, 77, 77, 1);
 }
 
+@media screen and (min-width: 1024px) {
+  .alles-tovar {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+  }
+}
+
+
 .olid {
   font-family: 'Montserrat';
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 12px;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(77, 77, 77, 1);
+}
+
+@media screen and (min-width: 1024px) {
+  .olid {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+  }
 }
 
 .all-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  .all-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0px;
+  }
 }
 
 .text-zina {
@@ -1969,15 +2129,33 @@ input[type="range"]::-moz-range-thumb {
 
 .product {
   /* width: calc(33.33% - 20px); */
-  width: 190px;
-  height: 305px;
+  width: 70px;
+  height: 155px;
   margin: 10px;
-  padding: 40px 5px;
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .product {
+    /* width: calc(33.33% - 20px); */
+    width: 190px;
+    height: 305px;
+    margin: 10px;
+    padding: 40px 5px;
+  }
 }
 
 .product-foto {
-  width: 190px;
-  height: 270px;
+  width: 80px;
+  height: 115px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .product-foto {
+    width: 190px;
+    height: 270px;
+  }
 }
 
 .all-infor {
@@ -1989,7 +2167,7 @@ input[type="range"]::-moz-range-thumb {
 
 .psra {
   font-family: 'Montserrat';
-  font-size: 20px;
+  font-size: 9px;
   font-weight: 500;
   letter-spacing: 0em;
   text-align: center;
@@ -1997,19 +2175,43 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 1px;
 }
 
+@media screen and (min-width: 1024px) {
+  .psra {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(77, 77, 77, 1);
+    margin-top: 1px;
+  }
+}
+
 .suma {
   font-family: 'Montserrat';
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0em;
   text-align: center;
   color: rgba(77, 77, 77, 1);
-  margin-top: -15px;
+  margin-top: -7px;
+}
+
+@media screen and (min-width: 1024px) {
+  .suma {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(77, 77, 77, 1);
+    margin-top: -15px;
+  }
 }
 
 .product-btn {
   font-family: 'Montserrat';
-  font-size: 12px;
+  font-size: 8px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0.06em;
@@ -2017,11 +2219,30 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(255, 255, 255, 1);
   background: rgba(191, 118, 145, 1);
   cursor: pointer;
-  width: 140px;
-  height: 40px;
-  border-radius: 8px;
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
   border: none;
-  margin-top: -10px;
+  margin-top: -3px;
+}
+
+@media screen and (min-width: 1024px) {
+  .product-btn {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(191, 118, 145, 1);
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-top: -10px;
+  }
 }
 
 
